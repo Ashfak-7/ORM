@@ -37,12 +37,12 @@ class Car_DB(models.Model):
     purchase_date=models.DateField()
 
 class Car_DBAdmin(admin.ModelAdmin):
-    list_dispa=["car_brand","order_id","car_model","price","purchase_date"]
+    list_display=["car_brand","order_id","car_model","price","purchase_date"]
 admin.py
 
 from django.contrib import admin
 from.models import Car_DB,Car_DBAdmin
-admin.register.site(Car_DB,Car_DBAdmin)
+admin.site.register(Car_DB,Car_DBAdmin)
 
 ```
 
